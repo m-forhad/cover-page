@@ -97,7 +97,7 @@ const text1 = document.getElementById("text1");
 
     download.addEventListener("click", function () {
         const link = document.createElement("a");
-        link.download = "custom_image.png";
+        link.download = "custom_assignment_cover_by_forhad_2300006.png";
         link.href = canvas.toDataURL("image/png");
         link.click();
     });
