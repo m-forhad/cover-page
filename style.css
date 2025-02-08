@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    margin: 0;
+}
+
+.header {
+    width: 100vw;
+    padding: 20px;
+    position: relative;
+    margin: 0;
+    font-family: "Lilita One", serif;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    background: #495055;
+    box-shadow: 1px 0px 20px black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background: white;
+    padding: 20px;
+    width: 100vw;
+    margin: 0;
+}
+
+h3 {
+    color: #333;
+}
+
+div.form-Container {
+    display: block;
+    width: clamp(320px, 40%, 640px);
+    background: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #218838;
+}
+
+div.input-block {
+    position: relative;
+}
+
+div.input-block input,
+div.input-block select {
+    font-size: 16px;
+    color: #495055;
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    outline: none;
+}
+
+div.input-block span.placeholder {
+    position: absolute;
+    margin: 17px 0;
+    padding: 0 5px;
+    font-family: Roboto, sans-serif;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    top: 4px;
+    left: 20px;
+    transition: all 0.2s;
+    transform-origin: 0% 0%;
+    background: none;
+    pointer-events: none;
+}
+
+div.input-block input:valid + span.placeholder,
+div.input-block input:focus + span.placeholder {
+    transform: scale(0.8) translateY(-30px);
+    background: #fff;
+}
+
+div.input-block input:focus {
+    color: #28A745; 
+    border: 2px solid #28A745 ;
+}
+
+div.input-block input:focus+span.placeholder {
+    color: #28A745;
+}
+
+div.img-Container {
+    display: block;
+    position: sticky;
+    top: 0;
+    width: clamp(320px, 40%, 640px);
+    background: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+canvas {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+}
+
+.footer {
+    width: 100vw;
+    padding: 20px;
+    margin: 10px 0 0 0;
+    background: #495055;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
